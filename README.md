@@ -8,6 +8,6 @@
 
 == HOW TO USE ==
    - place the python script in "C:\Program Files (x86)\Mars Explorer"
-   - run the python script with python 3
+   - run the python script with python 3 as administrator
    - read disclaimer
    - enter 'Y' or 'y' to patch
