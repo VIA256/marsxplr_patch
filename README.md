@@ -5,3 +5,9 @@
    But wait, theres more! This patch also re-enables the amazing managed multiplayer feature, which means you can now create and join worlds without having to worry about port forwarding.
 
    In addition to these essential features, the patch also raises the maximum number of bots spawnable in a session --from 10-- to 255
+
+== HOW TO USE ==
+   - place the python script in "C:\Program Files (x86)\Mars Explorer"
+   - run the python script with python 3
+   - read disclaimer
+   - enter 'Y' or 'y' to patch
