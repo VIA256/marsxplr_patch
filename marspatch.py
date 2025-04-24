@@ -17,6 +17,7 @@ def terminate():
     quit()
 
 #37da7 - 37dde (228775 - 228830)
+print('IMPORTANT: this script must be placed in the same directory as Mars Explorer.exe, and be run as administrator, or it will not work')
 print('this script makes changes to "Mars Explorer_Data/Assembly - UnityScript.dll".\nmaking a backup is suggested.')
 print('do you want to apply this patch now? (Yy / Nn)')
 if(input().lower() != 'y'):
