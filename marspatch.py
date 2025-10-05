@@ -3,7 +3,7 @@
 # P   A  TCHMA  RSPAT  CHMAR    SPATC  HMARS    P    A      TCHMA
 # R   S  P   A  T C        H    M      A   R    S    P      A   T
 # T   C  H   M  A  RS  PATCH    M      A   R    S    PATCH  M   A
-# version 1.2
+# version 1.3
 
 
 
@@ -49,13 +49,16 @@ while(j < len(newurl)):
     i += 2
     j += 1
 
-#at address 00007f51 (32593):
-#gameversion 2.22 (400E147B(be) = 7B140E40(le)) -> 2.3 (40133333(be) = 33331340(le))
-i = 32593
-gameverle = b'\x33\x33\x13\x40'
-for b in gameverle:
-    data[i] = b
-    i += 1
+## on second thought i dont want to change the game version
+## because it could make multiplayer issues in the future,
+## but this is how its done anyway.
+# at address 00007f51 (32593):
+# gameversion 2.22 (400E147B(be) = 7B140E40(le)) -> 2.3 (40133333(be) = 33331340(le))
+#i = 32593
+#gameverle = b'\x33\x33\x13\x40'
+#for b in gameverle:
+#    data[i] = b
+#    i += 1
 
 #@ba44: botcount < 10->50
 data[0xba44] = 0xff
@@ -79,3 +82,4 @@ while(i <= 228830):
 
 print('patch completed successfully')
 terminate()
+
