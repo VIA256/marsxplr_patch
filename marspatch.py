@@ -37,7 +37,7 @@ except:
 data = bytearray(f.read())
 f.close()
 
-newurl = bytes('73.189.4.24/upd3', 'ascii')
+newurl = bytes('omc.band/upd3\0\0\0\0\0', 'ascii')
 i = 228775
 while(i <= 228830):
     data[i] = 0
@@ -54,11 +54,11 @@ while(j < len(newurl)):
 ## but this is how its done anyway.
 # at address 00007f51 (32593):
 # gameversion 2.22 (400E147B(be) = 7B140E40(le)) -> 2.3 (40133333(be) = 33331340(le))
-#i = 32593
-#gameverle = b'\x33\x33\x13\x40'
-#for b in gameverle:
-#    data[i] = b
-#    i += 1
+i = 32593
+gameverle = b'\x33\x33\x13\x40'
+for b in gameverle:
+    data[i] = b
+    i += 1
 
 #@ba44: botcount < 10->50
 data[0xba44] = 0xff
