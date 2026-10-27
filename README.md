@@ -7,6 +7,7 @@
    In addition to these essential features, the patch also raises the maximum number of bots spawnable in a session --from 10-- to 255
 
 == HOW TO USE ==
+   - [download](https://raw.githubusercontent.com/VIA256/marsxplr_patch/refs/heads/main/marspatch.py) the python script
    - place the python script in "C:\Program Files (x86)\Mars Explorer"
    - run the python script with python 3 as administrator
    - read disclaimer
